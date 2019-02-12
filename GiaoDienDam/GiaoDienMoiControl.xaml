@@ -1,0 +1,39 @@
+﻿<Window x:Class="GiaoDienDam.GiaoDienMoiControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GiaoDienDam"
+             mc:Ignorable="d" Height="527.244" Width="820.751">
+    <Grid Background="White" Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="330*"/>
+            <ColumnDefinition Width="151*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel HorizontalAlignment="Left" Height="430" Margin="10,60,0,-21" VerticalAlignment="Top" Width="129">
+            <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+            <ComboBox/>
+            <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
+            <ComboBox/>
+            <Image Height="100"/>
+        </StackPanel>
+        <TabControl HorizontalAlignment="Left" Height="445" Margin="156,10,0,0" VerticalAlignment="Top" Width="637" Grid.ColumnSpan="2">
+            <TabItem x:Name="tabPage1" Header="TabItem" Foreground="#FFEA6464" Background="#FF6D9BFF" BorderBrush="#FFC72727">
+                <Grid Background="#FFE5E5E5" Margin="0,0,-15,0">
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="87,30,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="21,31,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabPage2" Header="TabItem">
+                <Grid Background="#FFE5E5E5" Margin="-9,0,-3,-5">
+                    <TextBlock HorizontalAlignment="Left" Margin="111,109,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="177,108,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Button x:Name="btnOK" Content="OK" HorizontalAlignment="Left" Margin="162,470,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Column="1"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="69,470,0,0" VerticalAlignment="Top" Width="75" Grid.Column="1" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
