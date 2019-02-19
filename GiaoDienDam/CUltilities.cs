@@ -28,11 +28,9 @@ namespace GiaoDienDam
             //}
 
         }
-        public const string VersionName = "4.5";
+        public const string VersionName = "4.6";
         //public const string BuildDate = "24 Jan, 2019\nFix đai C metro";
-        public const string BuildDate = "26 Jan, 2019\nFix hiển thị update lớp 2 thép chủ (lần 2)" +
-            "\nFix hiển thị update lớp 2 thép gia cường." +
-            "\n30 Jan, 2019\nFix các biến của GEM.";
+        public const string BuildDate = "13 Feb, 2019";
 
         //NEO THEP DAU DAM
         public const string goi1 = "GỐI 1";

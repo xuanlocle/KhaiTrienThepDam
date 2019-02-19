@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <RevitAddIns>
-  <AddIn Type="Command">
+  <!--<AddIn Type="Command">
     <Text>Command GiaoDienDam</Text>
     <Description>Some description for GiaoDienDam</Description>
     <Assembly>GiaoDienDam.dll</Assembly>
@@ -25,13 +25,13 @@
     <ClientId>9212abcd-d45c-4779-8ada-3282ecac3b80</ClientId>
     <VendorId>TBC_</VendorId>
     <VendorDescription>STKa Developer</VendorDescription>
-  </AddIn>
+  </AddIn>-->
   <AddIn Type="Application">
     <Name>Application GiaoDienDam</Name>
     <Assembly>GiaoDienDam.dll</Assembly>
     <FullClassName>GiaoDienDam.App</FullClassName>
     <ClientId>2c56bef3-50ff-476b-abac-72114dbc11e1</ClientId>
-    <VendorId>TBC_</VendorId>
+    <VendorId>STKa - Xuan Loc</VendorId>
     <VendorDescription>STKa Developer</VendorDescription>
   </AddIn>
 </RevitAddIns>

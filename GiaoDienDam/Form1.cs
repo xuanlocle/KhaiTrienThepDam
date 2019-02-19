@@ -829,8 +829,8 @@ namespace GiaoDienDam
                         cbThepDuoi2.Checked = GetParamCheck(CUltilities.thepDuoi2Check);
                         //if (cbThepDuoi2.Checked == false)
                         //{
-                            numThepChuDuoi2DuongKinh.Visible = cbThepDuoi2.Checked;
-                            numThepChuDuoi2SoLuong.Visible = cbThepDuoi2.Checked;
+                        numThepChuDuoi2DuongKinh.Visible = cbThepDuoi2.Checked;
+                        numThepChuDuoi2SoLuong.Visible = cbThepDuoi2.Checked;
                         //}
 
                         //numThepChuDuoi2Check.Value = GetParamDouble(CUltilities.thepDuoi2Check);
@@ -966,7 +966,7 @@ namespace GiaoDienDam
                         cbThepDaiCDungKepBen1.Checked = GetParamCheck(CUltilities.thepDaiCDungKepBen1);
                         cbThepDaiCDungKepBen2.Checked = GetParamCheck(CUltilities.thepDaiCDungKepBen2);
                         numThepDaiCDungKepN.Value = GetParamInt(CUltilities.thepDaiCDungKepN);
-                        
+
                         ///30/01/2019
                         //cbThepDaiCNgangTren.Checked = GetParamCheck(CUltilities.thepDaiCNgangTrenCheck);
                         //numThepDaiCNgangTrenD.Value = GetParamDouble(CUltilities.thepDaiCNgangTrenD);
@@ -976,22 +976,11 @@ namespace GiaoDienDam
                         //numThepDaiCNgangDuoiR.Value = GetParamDouble(CUltilities.thepDaiCNgangDuoiR);
                         ////30/01/2019
 
-                        if (cbThepDaiCDungDon.Checked == false &&
-                            cbThepDaiCDungKep.Checked == false &&
-                            cbThepDaiCNgangTren.Checked == false &&
-                            cbThepDaiCNgangDuoi.Checked == false)
-                            cbThepDaiC.Checked = false;
-
-
-                        if (damLoaiMoi)
-                        {
-
-                            //numThepGiaCuongNhipDinhVi.Value = GetParamDouble(CUltilities.thepGiaCuongNhipDinhViD2);
-                        }
-
-                        //}
-                        //else
-                        //{
+                        cbThepDaiC.Checked = cbThepDaiCDungDon.Checked ||
+                            cbThepDaiCDungKep.Checked ||
+                            cbThepDaiCNgangTren.Checked ||
+                            cbThepDaiCNgangDuoi.Checked;
+                        
 
                     }
                 }
